@@ -1,0 +1,95 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-size: 12px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: block;
+    width: 400px;
+}
+    .board > .header {
+        display: inline-block;;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+        .board > .header > * {
+            display: inline-block;
+            /*float: left;*/
+            text-align: center;
+        }
+        .board > .header > .counter {
+            background: black;
+            color: red;
+            font-size: 36px;
+            line-height: 40px;
+            width: 60px;
+        }
+        .board > .header > .status {
+            width: 60px;
+            line-height: 40px;
+            margin: 0 calc(50% - 95px);
+        }
+    .board > .content {
+        display: inline-block;;
+        width: 100%;
+    }
+        .board > .content > .cell {
+            display: inline-block;
+            /*float: left;*/
+            width: 25px;
+            height: 25px;
+            border: 1px solid #CCC;
+            background-color: beige;
+        }
+
+        
+
+
+
+
+
+
+.btn {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #FFF;
+    color: #333;
+}
+    .btn-green {
+        background-color: green;
+        color: #FFF;
+    }
+    .btn-red {
+        background-color: red;
+        color: #FFF;
+    }
+    .btn-cancel {
+        background-color: #CCC;
+        color: #000;
+    }
+    .btn-small {
+        padding: 5px 10px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .btn-large {
+        padding: 20px 40px;
+        font-size: 24px;
+        line-height: 40px;
+    }
